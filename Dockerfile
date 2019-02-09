@@ -1,6 +1,8 @@
 #vim: set ft=dockerfile:
 FROM alpine:3.5
 
+LABEL maintainer="chedoxtop@gmail.com"
+
 ENV PG_MAJOR 9.5
 ENV PG_VERSION 9.5.6
 

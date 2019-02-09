@@ -19,7 +19,7 @@ docker build -t chedox/postgre-alpine:latest .
 To run this images, type this command:
 ---------------------------------------
 
-docker run -d -p 27017:27017 -v ~/usr/apps/data/docker_data/postgredb:/data/db chedox/postgre-alpine:latest
+docker run -v -v ~/usr/apps/data/docker_data/postgredb:/data/db -e POSTGRES_USER=test -e POSTGRES_PASSWORD=secret -d chedox/postgre-alpine:latest
 
 Mounting volume
 -----------------------

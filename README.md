@@ -19,7 +19,7 @@ docker build -t chedox/postgre-alpine:latest .
 To run this images, type this command:
 ---------------------------------------
 
-docker run -v -v ~/usr/apps/data/docker_data/postgredb:/data/db -e POSTGRES_USER=test -e POSTGRES_PASSWORD=secret -d chedox/postgre-alpine:latest
+docker run -v ~/usr/apps/data/docker_data/postgredb:/data/db -e POSTGRES_USER=test -e POSTGRES_PASSWORD=secret -d chedox/postgre-alpine:latest
 
 Mounting volume
 -----------------------
@@ -29,3 +29,7 @@ That's to put -v ~/usr/apps/docker_data/postgredb:/data/db
 PostgreDB GUI interface
 ---------------------------
 To use postgreDB GUI browser, you can use pgAdmin III or higher.
+
+To find Ip Address, type this command:
+
+docker inspect (containerid)
